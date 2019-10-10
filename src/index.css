@@ -1,4 +1,24 @@
+@font-face {
+  font-family: 'Wellcome-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/wellcome-bold-webfont.woff2') format('woff2'),
+  url('/fonts/wellcome-bold-webfont.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
+  background: #444;
+  color: #efefef;
+  font-size: 1.4rem;
+  line-height: 1.5;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,4 +30,24 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+p {
+  margin: 0 0 1.5em;
+}
+
+.heading {
+  font-family: "Wellcome-Bold", sans-serif;
+  font-weight: bol;
 }

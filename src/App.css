@@ -8,15 +8,95 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #999;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+main {
+  padding: 2rem 0 10rem;
+}
+.nav {
+  background: #666;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-link {
+  color: #fff;
+  flex: 1 auto;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link--active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #fff;
+}
+
+.options {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.metric {
+  border: 1px solid #fff;
+  background: #f0f6ff;
+  color: #113170;
+  padding: 4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: relative;
+  flex: 0 calc(50% - 3rem);
+  margin: 3rem 1.5rem;
+}
+
+.metric-count {
+  font-size: 4rem;
+}
+
+.metric--positive.metric--active {
+  background: #e6f1d3;
+}
+
+.metric--negative.metric--active {
+  background: #fff0f2;
+}
+
+.btn {
+  border: none;
+  border-radius: 50rem;
+  color: white;
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+}
+.btn--up {
+  top: -2rem;
+  background: #6ba136;
+}
+.btn--down {
+  bottom: -2rem;
+  background: #f04763;
 }
