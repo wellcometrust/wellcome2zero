@@ -1,3 +1,9 @@
+# Wellcome2Zero demo
+
+This demo was conceived and put together for the OPOH priority area during an away day.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
